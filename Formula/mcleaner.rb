@@ -5,8 +5,10 @@ class Mcleaner < Formula
   sha256 "96cdf4e1dc03aab73b6c48c02d63659f10579290e0142882b716807242f021b6"
   license "MIT"
   version "0.1.0"
+  depends_on "ncurses"
 
   def install
+    system "make"
     bin.install "mcleaner"
   end
 
